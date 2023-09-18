@@ -1,0 +1,80 @@
+.CardMain{
+    justify-content: center;
+    gap: 5px;
+    display: flex;
+    
+    
+
+}
+
+.CardItem{
+    gap: 31px;
+    margin: 30px;
+    padding: 20px;
+    display: flex;
+    background: white;
+    width: 80%;
+}
+
+.titleBox{
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.CardBox{
+    /* justify-content: center; */
+    align-items: center;
+    width:80%;
+    display: flex;
+    border-radius: 10px;
+  
+}
+.removecircle{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: orange;
+    background: white;
+    height: 45px;
+    width: 45px;
+    border-radius: 50px;
+}
+.tableBox{
+    height: 90vh;
+    overflow: auto;
+}
+
+.imagebox{
+    height: 200px;
+    width: 200px;
+}
+
+
+.CardBoxData{
+    height: 400px;
+    width: 340px;
+    margin: 20px;
+    padding: 25px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.imagebox{
+    height:100%;
+    width: 100%;
+}
+
+.removeboxitem{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.descriptionbox{
+ 
+
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+}

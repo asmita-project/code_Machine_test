@@ -1,0 +1,19 @@
+.feedbackBox{
+    margin: auto;
+    width: 60%;
+    padding: 20px;
+}
+
+.inputstyle{
+    padding: 10px;
+}
+
+.form-group{
+    text-align: left;
+    padding-bottom: 15px;
+}
+
+.tableBox{
+    height: 90vh;
+    overflow: auto;
+}

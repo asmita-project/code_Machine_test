@@ -1,0 +1,76 @@
+.MainBox{
+    height: 90vh;
+    /* height: 43%; */
+    background: #abbeda;
+    padding: 20px;
+    gap: 10px;
+    display: flex;
+    width: 100%;
+}
+
+
+.sidePanel{
+    padding: 25px;
+    width: 17%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.Cardbox{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 25px;
+}
+
+.titleBox{
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+}
+
+.tonglrBox{
+    background-color: white;
+    border-radius: 5px;
+    padding:10px;
+    margin-bottom: 25px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.buttonBox{
+    justify-content: center;
+    width: 60%;
+    display: flex;
+}
+
+.ButtonBoxitem{
+    width: 50%;
+    background-color: #abbeda;
+    color: black;
+}
+
+.ButtonBoxitem1{
+    width: 50%;
+    background-color:#0dcaf0;;
+    color: black;
+}
+
+.titleFont{
+    font-size: 17px;
+    font-weight: bold;
+}
+
+
+.sideBoxMain{
+    width: 100%;
+    padding: 10px;
+}
+
