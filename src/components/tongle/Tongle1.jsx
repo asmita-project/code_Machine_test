@@ -25,26 +25,17 @@ export default function TongleOne() {
     }
 
     const removeData =(id)=>{
-   
-   const deletearray = Data.filter((item,index)=>{
-        if (index !== id) {
-            Data.splice(index, 1);  
-
-          }
-    })
-    console.log(deletearray,"delete")
-
+        const updatedItems = Data.filter((_,index) => index !== id);
+        SetData(updatedItems);
         Swal.fire(
             'Deleted',
             'Successfully',
             'success'
         )
-
-
-    //   const DeleteData = Data.splice(id, 1)
-      console.log(deletearray)
      
     }
+
+    // console.log(Data,"datadelete")
    
 
 
@@ -52,7 +43,7 @@ export default function TongleOne() {
         <div>
             <div className="tableBox">
                 {
-                    deletearray.map((item, index) => (
+                    Data.map((item, index) => (
                         <div key={item.id} className="CardMain">
                             <div className="CardBox">
                             <div className="CardItem">

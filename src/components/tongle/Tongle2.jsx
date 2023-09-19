@@ -1,11 +1,35 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import flower from '../../image/images.jfif';
+import Swal from "sweetalert2";
 import './tongle.css'
 
 export default function TongleTwo() {
 
     const [Data, SetData] = useState([])
+
+    const [randomData,setRandomData]=useState([
+        {
+            id:1,
+            name:"asmita"
+,
+        },
+        {
+            id:2,
+            name:"samiksha"
+,
+        },
+        {
+            id:3,
+            name:"amita"
+,
+        },
+        {
+            id:4,
+            name:"kajal"
+,
+        }
+    ])
 
     useEffect(() => {
         getallCard()
@@ -20,6 +44,19 @@ export default function TongleTwo() {
                 console.log("error")
             })
     }
+    const removeData =(id)=>{
+        const updatedItems = Data.filter((item,index) => index !== id);
+        console.log(updatedItems,"updateitem")
+        SetData(updatedItems);
+        Swal.fire(
+            'Deleted',
+            'Successfully',
+            'success'
+        )
+     
+    }
+
+   
     return (
         <div className="tableBox">
             <div className="row">
@@ -29,7 +66,7 @@ export default function TongleTwo() {
 
                             <div className="CardBoxData">
                                 <div style={{ height: "50%" }}>
-                                    <div className="removeboxitem">
+                                    <div className="removeboxitem" onClick={()=>{removeData(index)}}>
                                         <i className="fa fa-remove" style={{ fontSize: "25px",color:"orange" }}></i>
 
                                     </div>
@@ -57,6 +94,8 @@ export default function TongleTwo() {
                     ))
                 }
             </div>
+
+
         </div>
     )
 }

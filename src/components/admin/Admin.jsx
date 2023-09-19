@@ -30,10 +30,10 @@ export default function Admin() {
                                 <label className="titleFont">View Tongle</label>
                             </div>
                             <div className="buttonBox">
-                                <div className="ButtonBoxitem" onClick={()=>{setPage(1)}}>
+                                <div className={page === 1?"ButtonBoxitem1":"ButtonBoxitem"}  onClick={()=>{setPage(1)}}>
                                 <i className="fa fa-newspaper-o" aria-hidden="true"></i>
                                 </div>
-                                <div className="ButtonBoxitem1" onClick={()=>{setPage(2)}}>
+                                <div className={page === 2?"ButtonBoxitem1":"ButtonBoxitem"} onClick={()=>{setPage(2)}}>
                                 <i className="fa fa-list" aria-hidden="true"></i>
 
                                 </div>
